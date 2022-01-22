@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>모히또🍸- 비식별처리</title>
-  <meta charset="utf-8">
-  <style>
-    a {
-      color:black;
-    }
-  </style>
-</head>
-<body>
-  <ul>
-    <h2><br><br>📢 <a href="1.html"><u>비정형 음성 데이터의 비식별화 처리</u></a></h2>
+  <head>
+    <title>모히또🍸</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0;
+      }
+      ul {
+        list-style-type : none;
+        margin : 0;
+        padding : 0;
+        padding-left : 5px;
+        font-size : 12.5px;
+        width : 17.5%;
+        background-color : #F6F6F6;
+        position : fixed;
+        height : 100%;
+        overflow : auto;
+      }
+      li a {
+        display : block;
+        color : #000000;
+        padding : 8px 16px;
+        text-decoration : none;
+      }
+      li a.active {
+        background-color : #EEEEEE;
+        color : #000000;
+      }
+
+      li a:hover:not(.active) {
+        background-color : #EEEEEE;
+        color : #000000;
+      }
+    </style>
+  </head>
+  <body>
     <ul>
-      <p><p><br>🪄 <a href="2.html">비식별화 처리</a></p></p>
-      <ul><div align="center" style="height: 45px; witdh: 100%; border: 1px solid #ccc; line-height: 45px; margin-bottom: 5px">
-        음성 데이터 업로드</div>
-      <div align="center" style="height: 45px; witdh: 100%; border: 1px solid #ccc; line-height: 45px; margin-bottom: 5px">
-        음성 데이터 녹음하기</div></ul>
-      <p><p><br>🪄 음성 데이터 인식</p></p>
-      <p><p><br>🪄 비식별 처리 결과</p></p>
+      <li><a href="home.html">기술 소개 ⚙️</a></li>
+      <li><a class="active" href="execute.html">기술 사용 🔧</a></li>
+      <li><a href="team.html">팀 소개 🍸</a></li>
     </ul>
-  </ul>
-</body>
+    <div style="padding-bottom: 50px;">
+      <div id="header" style="margin-left: 17.5%; padding: 50px; font-size: 25px; font-weight: bold;">
+        🪄 비식별화 처리
+      </div>
+      <div id="upload" align="center" style="margin-left: 25%; margin-right: 2.5%; height: 45px; witdh: 100%; border: 1px solid #ccc; line-height: 45px; margin-bottom: 5px; font-size: 12.5px;">
+        음성 데이터 업로드
+      </div>
+      <div id="record" align="center" style="margin-left: 25%; margin-right: 2.5%; height: 45px; witdh: 100%; border: 1px solid #ccc; line-height: 45px; margin-bottom: 5px; font-size: 12.5px;">
+        음성 데이터 녹음하기
+      </div>
+      <div id="recognition" style="margin-left: 22.5%; padding-top: 40px; padding-bottom: 30px; font-size: 15px; line-hegiht: 200%">
+        🪄 음성 데이터 인식
+      </div>
+      <div id="recognitionBox" align="center" style="margin-left: 25%; margin-right: 2.5%; height: 140px; witdh: 100%; border: 1px solid #ccc; line-height: 45px; margin-bottom: 5px">
+      </div>
+      <div id="output" style="margin-left: 22.5%; padding-top: 40px; padding-bottom: 30px; font-size: 15px; line-hegiht: 200%">
+        🪄 비식별 처리 결과
+      </div>
+      <div id="outputBox" align="center" style="margin-left: 25%; margin-right: 2.5%; height: 140px; witdh: 100%; border: 1px solid #ccc; line-height: 45px; margin-bottom: 5px">
+      </div>
+      <div style="margin-top: 1%; margin-left: 25%; font-size: 12.5px;">
+        📄 텍스트 파일로 다운로드
+      </div>
+    </div>
+  </body>
 </html>
